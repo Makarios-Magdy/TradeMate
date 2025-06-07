@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "isExchange": {
+      "type": "boolean"
+    },
+    "price": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "describtion": {
+      "type": "text",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "All",
+        "Toys",
+        "Sports",
+        "Home Appliances",
+        "Clothing",
+        "Books",
+        "Electronics"
+      ],
+      "required": true
+    },
+    "Locations": {
+      "type": "enumeration",
+      "enum": [
+        "Cairo",
+        "Alexandria",
+        "Giza",
+        "Aswan",
+        "Luxor",
+        "Ismailia",
+        "Suez",
+        "Zagazig",
+        "Mansoura",
+        "Tanta"
+      ],
+      "required": true
+    },
+    "exchangeWith": {
+      "type": "string"
+    },
+    "contactNumber": {
+      "type": "string",
+      "required": true,
+      "minLength": 11,
+      "maxLength": 11
+    }
+  }
+}

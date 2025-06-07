@@ -1,0 +1,132 @@
+.upload {
+  background-color: #3498db3f;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  padding-top: 120px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.upload-form {
+  background-color: #3498db3f;
+  width: 100%;
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.preview-image:hover {
+  transform: scale(1.05);
+}
+
+.image-preview-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.image-preview-wrapper {
+  position: relative;
+  aspect-ratio: 1;
+  width: 100%;
+  max-width: 150px;
+  height: 150px;
+  margin: 8px;
+  display: inline-block;
+}
+
+.preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.remove-image-button {
+  position: absolute !important;
+  top: 4px;
+  right: 4px;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: white !important;
+  padding: 4px !important;
+}
+
+.remove-image-button:hover {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.upload-button:hover {
+  background-color: #2980b9 !important;
+  transform: scale(1.02);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.upload-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.form-field {
+  width: 100%;
+  margin: 10px 0 !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.form-field .MuiInputLabel-root {
+  color: #000;
+}
+
+.form-field .MuiOutlinedInput-root {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.form-field .MuiOutlinedInput-notchedOutline {
+  border-color: #000;
+}
+
+.form-field .MuiRadio-root {
+  color: #000;
+}
+
+.form-field .MuiFormLabel-root {
+  color: #000;
+}
+
+.form-field .MuiSelect-select {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 600px) {
+  .upload-form {
+    padding: 15px;
+  }
+
+  .preview-image {
+    max-height: 200px;
+  }
+
+  .form-field {
+    padding: 5px;
+  }
+}

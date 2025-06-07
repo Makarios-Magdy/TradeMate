@@ -1,0 +1,77 @@
+/* App-wide styles */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Exo', sans-serif;
+}
+
+/* Fix for header and alerts positioning */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Animation for alerts */
+@keyframes slideIn {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+}
+
+/* Custom alert styling */
+.custom-alert-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.custom-alert-message {
+  font-size: 0.9rem;
+}
+
+.custom-alert-close {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  transition: var(--transition);
+}
+
+.custom-alert-close:hover {
+  color: #333;
+}
+
+/* Alert types */
+.custom-alert.success {
+  border-left: 4px solid var(--success-color);
+}
+
+.custom-alert.error {
+  border-left: 4px solid var(--danger-color);
+}
+
+.custom-alert.info {
+  border-left: 4px solid var(--primary-color);
+}

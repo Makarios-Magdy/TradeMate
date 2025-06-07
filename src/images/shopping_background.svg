@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- خلفية متدرجة عصرية -->
+  <defs>
+    <linearGradient id="background" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3498db" />
+      <stop offset="100%" stop-color="#8e44ad" />
+    </linearGradient>
+  </defs>
+  
+  <!-- خلفية الصورة -->
+  <rect width="800" height="400" fill="url(#background)" />
+  
+  <!-- نمط خلفية عصري -->
+  <g opacity="0.1" fill="white">
+    <circle cx="100" cy="80" r="40" />
+    <circle cx="700" cy="320" r="60" />
+    <circle cx="400" cy="50" r="25" />
+    <circle cx="200" cy="350" r="30" />
+    <circle cx="600" cy="150" r="45" />
+  </g>
+  
+  <!-- ملابس شبابية -->
+  <!-- قميص رياضي -->
+  <g transform="translate(100, 100)">
+    <path d="M0,0 L60,0 L60,80 L0,80 Z" fill="#e74c3c" />
+    <path d="M25,0 L35,0 L35,20 L25,20 Z" fill="#ecf0f1" />
+    <text x="30" y="50" font-family="Arial" font-size="12" fill="white" text-anchor="middle">T</text>
+  </g>
+  
+  <!-- بنطلون جينز -->
+  <g transform="translate(650, 150)">
+    <path d="M0,0 L40,0 L40,100 L30,100 L25,85 L15,85 L10,100 L0,100 Z" fill="#2980b9" />
+    <rect x="10" y="10" width="20" height="5" fill="#e67e22" />
+  </g>
+  
+  <!-- حذاء رياضي -->
+  <g transform="translate(500, 330)">
+    <path d="M0,0 C0,0 10,-10 30,-10 C50,-10 60,0 60,0 L60,20 C60,20 50,25 30,25 C10,25 0,20 0,20 Z" fill="#2c3e50" />
+    <path d="M10,20 L10,10 L50,10 L50,20" stroke="white" stroke-width="2" fill="none" />
+  </g>
+  
+  <!-- سماعات رأس -->
+  <g transform="translate(200, 180)">
+    <circle cx="0" cy="20" r="15" fill="#95a5a6" />
+    <circle cx="60" cy="20" r="15" fill="#95a5a6" />
+    <path d="M0,20 C0,0 60,0 60,20" stroke="#95a5a6" stroke-width="8" fill="none" />
+  </g>
+  
+  <!-- أجهزة إلكترونية -->
+  <!-- هاتف ذكي -->
+  <g transform="translate(400, 150)">
+    <rect x="0" y="0" width="30" height="60" rx="5" fill="#34495e" />
+    <rect x="3" y="5" width="24" height="40" rx="2" fill="#3498db" />
+    <circle cx="15" cy="52" r="3" fill="#bdc3c7" />
+  </g>
+  
+  <!-- حاسوب محمول -->
+  <g transform="translate(550, 80)">
+    <rect x="0" y="0" width="70" height="45" rx="3" fill="#7f8c8d" />
+    <rect x="5" y="5" width="60" height="35" fill="#ecf0f1" />
+    <path d="M-10,45 L80,45 L75,60 L-5,60 Z" fill="#95a5a6" />
+  </g>
+  
+  <!-- كتاب -->
+  <g transform="translate(300, 270)">
+    <path d="M0,0 L60,0 L60,70 L0,70 Z" fill="#16a085" />
+    <path d="M30,0 L30,70" stroke="white" stroke-width="2" />
+    <path d="M5,15 L25,15 M5,25 L25,25 M5,35 L25,35 M35,15 L55,15 M35,25 L55,25 M35,35 L55,35" stroke="white" stroke-width="1" />
+  </g>
+  
+  <!-- كرة قدم -->
+  <g transform="translate(120, 300)">
+    <circle cx="0" cy="0" r="25" fill="white" />
+    <path d="M-10,-20 L10,-20 L15,0 L0,15 L-15,0 Z" fill="black" />
+    <path d="M-10,-20 L10,-20 M10,-20 L15,0 M15,0 L0,15 M0,15 L-15,0 M-15,0 L-10,-20" stroke="black" stroke-width="2" fill="none" />
+  </g>
+  
+  <!-- لوح تزلج -->
+  <g transform="translate(450, 220)">
+    <path d="M-40,-10 C-30,-15 30,-15 40,-10 C50,-5 50,5 40,10 C30,15 -30,15 -40,10 C-50,5 -50,-5 -40,-10 Z" fill="#f39c12" />
+    <rect x="-25" y="-5" width="15" height="10" fill="#2c3e50" />
+    <rect x="10" y="-5" width="15" height="10" fill="#2c3e50" />
+  </g>
+  
+  <!-- جهاز ألعاب -->
+  <g transform="translate(680, 280)">
+    <rect x="0" y="0" width="40" height="20" rx="5" fill="#8e44ad" />
+    <circle cx="10" cy="10" r="5" fill="#ecf0f1" />
+    <circle cx="30" cy="10" r="5" fill="#ecf0f1" />
+    <rect x="25" y="7" width="2" height="6" fill="#8e44ad" />
+    <rect x="28" y="7" width="2" height="6" fill="#8e44ad" />
+    <rect x="9" y="5" width="2" height="10" fill="#8e44ad" />
+    <rect x="4" y="10" width="12" height="2" fill="#8e44ad" />
+  </g>
+  
+  <!-- نظارة شمسية -->
+  <g transform="translate(230, 100)">
+    <path d="M0,0 L100,0" stroke="#7f8c8d" stroke-width="3" />
+    <path d="M20,-5 C10,5 10,15 20,25 C30,35 50,35 60,25 C70,15 70,5 60,-5 C50,-15 30,-15 20,-5 Z" fill="none" stroke="#7f8c8d" stroke-width="3" />
+    <path d="M25,2 C18,10 18,15 25,22 C32,30 48,30 55,22 C62,15 62,10 55,2 C48,-5 32,-5 25,2 Z" fill="#34495e" />
+  </g>
+  
+  <!-- تم إزالة العنوان والنص -->
+</svg>

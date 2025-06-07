@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "baskets",
+  "info": {
+    "singularName": "basket",
+    "pluralName": "baskets",
+    "displayName": "basket",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "isExchange": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "price": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "describtion": {
+      "type": "text"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "All",
+        "Toys",
+        "Sports",
+        "Home Appliances",
+        "Clothing",
+        "Books",
+        "Electronics"
+      ]
+    },
+    "Locations": {
+      "type": "enumeration",
+      "enum": [
+        "Cairo",
+        "Alexandria",
+        "Giza",
+        "Aswan",
+        "Luxor",
+        "Ismailia",
+        "Suez",
+        "Zagazig",
+        "Mansoura",
+        "Tanta"
+      ]
+    },
+    "exchangeWith": {
+      "type": "string"
+    },
+    "contactNumber": {
+      "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "basket"
+    },
+    "productId": {
+      "type": "integer",
+      "unique": true
+    },
+    "imageUrl": {
+      "type": "string"
+    }
+  }
+}
